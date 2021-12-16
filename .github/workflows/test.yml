@@ -26,4 +26,4 @@ jobs:
     - name: Check clippy
       run: cargo clippy -- -D warnings
     - name: Run tests
-      run: wasm-pack test --headless --firefox --verbose
+      run: cd ./lib; wasm-pack test --headless --firefox --verbose
