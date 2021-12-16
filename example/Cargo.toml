@@ -4,7 +4,7 @@ version = "0.1.0"
 authors = ["Lukas Krickl <lukas@krickl.dev>"]
 description = ""
 license = "MIT"
-homepage = "https://github.com/unlink2/color-scheme"
+homepage = "https://github.com/unlink2/prefers-color-scheme"
 edition = "2021"
 
 [[bin]]

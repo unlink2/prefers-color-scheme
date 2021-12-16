@@ -1,10 +1,10 @@
 [package]
 name = "prefers-color-scheme"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Lukas Krickl <lukas@krickl.dev>"]
 description = "CSS prefers dark/light media query binding"
 license = "MIT"
-homepage = "https://github.com/unlink2/color-scheme"
+homepage = "https://github.com/unlink2/prefers-color-scheme"
 readme = "../README.md"
 edition = "2021"
 
