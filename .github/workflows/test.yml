@@ -17,7 +17,13 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: Install wasm-pack
+      run: cargo install wasm-pack
+    - name: Add wasm target
+      run: rustup target add wasm32-unknown-unknown
+    - name: Install Firefox
+      run: sudo apt-get install firefox
     - name: Check clippy
       run: cargo clippy -- -D warnings
     - name: Run tests
-      run: cargo test --verbose
+      run: wasm-pack test --headless --firefox --verbose

@@ -63,6 +63,11 @@ fn main() {
 }
 ```
 
+### Running tests
+
+Tests can be run using `wasm-pack test --headless --firefox`
+or `wasm-pack test --headless --chrome`
+
 ## License
 
 This program is distributed under the terms of the MIT License.

@@ -13,3 +13,21 @@ extern "C" {
 extern "C" {
     pub fn prefers_light() -> bool;
 }
+
+#[cfg(test)]
+mod test {
+    use super::*;
+    use wasm_bindgen_test::*;
+
+    wasm_bindgen_test_configure!(run_in_browser);
+
+    #[wasm_bindgen_test]
+    fn it_should_return_true_for_dark_mode() {
+        assert!(prefers_dark());
+    }
+
+    #[wasm_bindgen_test]
+    fn it_should_return_false_for_light_mode() {
+        assert!(!prefers_light());
+    }
+}

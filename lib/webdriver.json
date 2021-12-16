@@ -1,0 +1,12 @@
+{
+  "moz:firefoxOptions": {
+    "prefs": {
+      "ui.systemUsesDarkTheme": 1
+    },
+    "args": []
+  },
+  "goog:chromeOptions": {
+    "args": [
+    ]
+  }
+}
