@@ -1,0 +1,16 @@
+[package]
+name = "color-scheme-example"
+version = "0.1.0"
+authors = ["Lukas Krickl <lukas@krickl.dev>"]
+description = ""
+license = "MIT"
+homepage = "https://github.com/unlink2/color-scheme"
+edition = "2021"
+
+[[bin]]
+name = "color_scheme_example"
+path = "src/main.rs"
+
+[dependencies]
+prefers-color-scheme = {path = "../lib"}
+yew = "0.19"

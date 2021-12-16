@@ -1,0 +1,16 @@
+[package]
+name = "prefers-color-scheme"
+version = "0.1.0"
+authors = ["Lukas Krickl <lukas@krickl.dev>"]
+description = "CSS prefers dark/light media query binding"
+license = "MIT"
+homepage = "https://github.com/unlink2/color-scheme"
+readme = "../README.md"
+edition = "2021"
+
+[lib]
+name = "prefers_color_scheme"
+path = "src/lib.rs"
+
+[dependencies]
+wasm-bindgen = "0.2.78"
