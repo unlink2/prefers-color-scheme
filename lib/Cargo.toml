@@ -1,6 +1,6 @@
 [package]
 name = "prefers-color-scheme"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["Lukas Krickl <lukas@krickl.dev>"]
 description = "CSS prefers dark/light media query binding"
 license = "MIT"

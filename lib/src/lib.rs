@@ -14,6 +14,13 @@ extern "C" {
     pub fn prefers_light() -> bool;
 }
 
+#[wasm_bindgen(inline_js = r"export function prefers_none() {
+        return window.matchMedia && window.matchMedia('(prefers-color-scheme: no-preference)').matches;
+    }")]
+extern "C" {
+    pub fn prefers_none() -> bool;
+}
+
 #[cfg(test)]
 mod test {
     use super::*;
@@ -29,5 +36,10 @@ mod test {
     #[wasm_bindgen_test]
     fn it_should_return_false_for_light_mode() {
         assert!(!prefers_light());
+    }
+
+    #[wasm_bindgen_test]
+    fn it_should_return_false_for_none() {
+        assert!(!prefers_none());
     }
 }
